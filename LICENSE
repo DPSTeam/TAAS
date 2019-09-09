@@ -1,0 +1,12 @@
+"TAAS" - Translation as a service framework
+
+Copyright (C) 2019 "Wang Wanlin"<dgideas@outlook.com>
+
+This framework is originally created when I were in Chinlab(初来汉语). It use 
+"googletrans" package on pypi which using Google Translate service. There's
+no any guarantee that the library would work properly. All the translate results
+from GT without any modification, it could only use as reference.
+
+You can use this framework in any way, just by reference with the original author.
+The only restriction is that you need to send an email to the author when using 
+this framework for commercial use.
