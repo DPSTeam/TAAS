@@ -42,6 +42,7 @@ def main():
 	connection = pika.BlockingConnection(parameters)
 	channel = connection.channel()
 	channel.queue_declare(queue="taas", durable=True, exclusive=False, auto_delete=False)
+	channel.basic_qos(prefetch_count = 100)
 	channel.basic_consume('taas', taas_translate_async)
 	try:
 		channel.start_consuming()
