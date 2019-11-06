@@ -19,6 +19,20 @@ disown
 ````
 If all these command execute successfully, you will see HTTP API over port 5000.
 
+# Import/Export translation cache
+TaaS allow you import and export translation data from database.
+## Export translation for backup
+* Execute
+````sh
+python3 exportTranslate.py
+````
+After that, you can see your translate database dump at ```translate_dump.json```.
+## Import translation into database
+* Execute
+````sh
+python3 importTranslate.py <filename>
+````
+
 # Dependency
 * ```googletrans``` on pypi
 * ```flask``` on pypi
